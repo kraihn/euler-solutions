@@ -13,3 +13,13 @@ def p1():
         sum += multiples[i]
 
     print sum
+
+def p16():
+
+    num = str(pow(2, 1000))
+    sum = 0
+
+    for i in num:
+        sum += int(i)
+
+    print sum
