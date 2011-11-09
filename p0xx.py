@@ -23,3 +23,13 @@ def p16():
         sum += int(i)
 
     print sum
+
+def p48():
+
+    sum = 0
+
+    for i in range(1, 1001):
+        sum += pow(i, i)
+        print i
+
+    print str(sum)[(len(str(sum))-10):]
