@@ -4,14 +4,15 @@ import p2xx
 import p3xx
 import sys
 
+
 def main():
     quit = False
-    print 'Welcome to Euler Solutions. This application and solutions were written by Jared Dickson.\n'
+    print('Welcome to Euler Solutions. This application and solutions were written by Jared Dickson.\n')
     while quit != True:
-        print "Please enter the integer Id to view the description and the solution,\nor type 'q' to quit"
+        print("Please enter the integer Id to view the description and the solution,\nor type 'q' to quit")
         
-        response = raw_input("Project Id: ")
-        print '\n'
+        response = input("Project Id: ")
+        print('\n')
 
         if response == 'q':
             quit = True
@@ -24,30 +25,30 @@ def main():
                     method = getattr(p0xx, ('p' + str(response)))
                     method()
                 except:
-                    print 'No solution available.'
+                    print('No solution available.')
 
             elif response >= 100 and response < 200:                
                 try:
                     method = getattr(p1xx, ('p' + str(response)))
                     method()
                 except:
-                    print 'No solution available.'
+                    print('No solution available.')
 
             elif response >= 200 and response < 300:                
                 try:
                     method = getattr(p2xx, ('p' + str(response)))
                     method()
                 except:
-                    print 'No solution available.'
+                    print('No solution available.')
 
             elif response >= 300 and response < 400:                
                 try:
                     method = getattr(p3xx, ('p' + str(response)))
                     method()
                 except:
-                    print 'No solution available.'
+                    print('No solution available.')
 
-        print '\n'
+        print('\n')
 
 
 if __name__ == '__main__':
